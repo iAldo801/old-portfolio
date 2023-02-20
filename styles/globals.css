@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px -3px 15px #1dcae0;
+  }
+
+  .midnight {
+    background-color: #171E27;
+    color: white;
+  }
+
+  .bg-custom {
+    background-image: url("../public/404-error.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+
+@font-face {
+  font-family: "bold font";
+  src: url("../public/boldfont.ttf");
+}
+
 html,
 body {
   padding: 0;
@@ -21,10 +45,7 @@ a:hover {
   box-sizing: border-box;
 }
 
-.midnight {
-  background-color: #171E27;
-  color: white;
-}
+
 
 ::-moz-selection {
   background: #fcfcfc;
@@ -42,6 +63,7 @@ a:hover {
   width: 0.5rem;
   background-color: #334155;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: orange;
   border-radius: 50px;
