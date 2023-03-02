@@ -1,13 +1,14 @@
 import { useState } from "react";
 import Image from "next/image";
 import nothing from "../../public/nothing.png"
+import sparkimg from "../../public/sparkimg.png"
 
 export default function Portfolio() {
 
     const [isOpenWeb, setIsOpenWeb] = useState(false);
     const [isOpenBots, setIsOpenBots] = useState(false);
     const [isOPenConfig, setIsOpenConfig] = useState(false);
-    
+
     return (
 
         <section id="portfolio" className={'min-h-screen py-10'}>
@@ -29,7 +30,9 @@ export default function Portfolio() {
                     {isOpenWeb && (
                         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
                             <div className="basis-1/3 flex-1">
-                                <Image className="rounded-lg object-cover" width={'100%'} height={'100%'} src={nothing} />
+                                <a target={"_blank"} href="https://sparkmc.us/">
+                                    <Image className="rounded-lg object-cover" width={'100%'} height={'100%'} src={sparkimg} />
+                                </a>
                             </div>
                             <div className="basis-1/3 flex-1">
                                 <Image className="rounded-lg object-cover" width={'100%'} height={'100%'} src={nothing} />

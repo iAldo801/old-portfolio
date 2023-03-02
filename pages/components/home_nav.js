@@ -23,6 +23,13 @@ export default function Home() {
                             <AiFillTwitterCircle />
                         </a>
                     </li>
+                    <li className="">
+                            <button onClick={handleClick} className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded-lg">
+                                <p>
+                                    Contact me
+                                </p>
+                            </button>
+                    </li>
                 </ul>
             </nav>
 
@@ -56,6 +63,13 @@ export default function Home() {
     function handleClick(event) {
         event.preventDefault();
         const servicesSection = document.getElementById("services");
+        const yCoord = servicesSection.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({ top: yCoord, behavior: "smooth" });
+    }
+
+    function handleClick(event) {
+        event.preventDefault();
+        const servicesSection = document.getElementById("contact");
         const yCoord = servicesSection.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({ top: yCoord, behavior: "smooth" });
     }
