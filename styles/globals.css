@@ -42,6 +42,10 @@
     margin-bottom: 100px;
   }
 
+  .animate-bounce {
+    animation: bounce 3s infinite;
+  }
+
 }
 
 @font-face {
