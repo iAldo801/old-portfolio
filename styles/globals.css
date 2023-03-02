@@ -8,7 +8,7 @@
   }
 
   .midnight {
-    background-color: #171E27;
+    background-color: #31435f;
     color: white;
   }
 
@@ -17,6 +17,29 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .floating-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .container {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
 }
@@ -38,7 +61,16 @@ a {
 
 a:hover {
   color: #334155;
+}
 
+img {
+  -webkit-user-drag: none;
+  user-zoom: none;
+  user-select: none;
+}
+
+button {
+  user-select: none;
 }
 
 * {
