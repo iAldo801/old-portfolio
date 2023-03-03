@@ -8,11 +8,11 @@ export default function Contact() {
 
             <div className="relative container">
                 <div className="lg:flex gap-10">
-                    <div className="text-center shadow-2xl p-40 rounded-xl my-10 bg-slate-800 flex-1 floating-animation md:p-80">
-                        <h3 className="md:text-lg text-sm font-medium pt-8 pb-2">
+                    <div className="text-center shadow-2xl p-10 rounded-xl my-10 bg-slate-800 flex-1 floating-animation md:p-40">
+                        <h3 className="md:text-4xl text-2xl font-bold_font pt-8 pb-2">
                             <i className="bi bi-envelope"></i> Contact Me
                         </h3>
-                        <p className="py-2">
+                        <p className="py-2 text-lg">
                             If you have any questions or want to contact me, you can do so with the info below.
                         </p>
                         <div className="flex justify-center">

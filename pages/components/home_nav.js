@@ -24,7 +24,7 @@ export default function Home() {
                         </a>
                     </li>
                     <li className="">
-                            <button onClick={handleClick} className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded-lg">
+                            <button onClick={handleClick} className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded-lg hidden md:flex">
                                 <p>
                                     Contact me
                                 </p>
