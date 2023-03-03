@@ -9,10 +9,10 @@ export default function Home() {
 
         <section className="min-h-screen">
 
-            <nav className="py-10 mb-12 flex justify-between dark:text-slate-500">
+            <nav className="py-10 mb-12 flex justify-between text-slate-500">
                 <h1 className="font-poppins text-xl">iAldo80</h1>
                 <ul className="flex items-center">
-                    <li className="text-2xl pr-5 flex justify-center gap-5 dark:text-gray-400">
+                    <li className="text-2xl pr-5 flex justify-center gap-5 text-gray-400">
                         <a className="hover:text-slate-500" target={"_blank"} href="https://github.com/iAldo85">
                             <AiFillGithub />
                         </a>
@@ -24,7 +24,7 @@ export default function Home() {
                         </a>
                     </li>
                     <li className="">
-                            <button onClick={handleClick} className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded-lg hidden md:flex">
+                            <button onClick={handleClickContact} className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-lg hidden md:flex">
                                 <p>
                                     Contact me
                                 </p>
@@ -35,24 +35,24 @@ export default function Home() {
 
 
             <div className="text-center p-10 py-10">
-                <h2 className="font-bold_font text-6xl py-2 dark:text-white text-shadow md:text-7xl">
+                <h2 className="font-bold_font text-6xl py-2 text-white text-shadow md:text-7xl">
                     Aldo Hernandez
                 </h2>
                 <hr className="w-64 border-blue-600 mx-auto"></hr>
                 <br></br>
-                <h3 className="text-2xl font-semibold py-2 dark:text-slate-400 md:text-3xl">
+                <h3 className="text-2xl font-semibold py-2 text-slate-400 md:text-3xl">
                     Frontend Web Developer
                 </h3>
-                <p className="text-md py-5 leading-8 dark:text-slate-400  max-w-xl mx-auto md:text-xl">
+                <p className="text-md py-5 leading-8 text-slate-400  max-w-xl mx-auto md:text-xl">
                     I'm a Frontend Web Developer based in the US. I enjoy
                     creating things that live on the internet, whether that
                     be websites, applications, or anything in between. I also
                     enjoy playing video games and hanging out with friends.
                 </p>
-                <p className="text-md py-5 leading-8 dark:text-slate-400 max-w-xl mx-auto md:text-xl">
+                <p className="text-md py-5 leading-8 text-slate-400 max-w-xl mx-auto md:text-xl">
                     Check out my services!
                 </p>
-                <button onClick={handleClick} className="hover:text-orange-500">
+                <button onClick={handleClickServices} className="hover:text-orange-500 text-white">
                     <BsArrowDownCircle className="text-4xl animate-bounce" />
                 </button>
             </div>
@@ -60,14 +60,14 @@ export default function Home() {
 
     )
 
-    function handleClick(event) {
+    function handleClickServices(event) {
         event.preventDefault();
         const servicesSection = document.getElementById("services");
         const yCoord = servicesSection.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({ top: yCoord, behavior: "smooth" });
     }
 
-    function handleClick(event) {
+    function handleClickContact(event) {
         event.preventDefault();
         const servicesSection = document.getElementById("contact");
         const yCoord = servicesSection.getBoundingClientRect().top + window.pageYOffset;

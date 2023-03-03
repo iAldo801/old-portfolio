@@ -11,17 +11,17 @@ export default function Portfolio() {
 
     return (
 
-        <section id="portfolio" className={'min-h-screen py-10'}>
+        <section id="portfolio" className={'min-h-screen'}>
             <div>
-                <h3 className="font-bold_font text-5xl py-1 dark:text-white">Portfolio</h3>
-                <p className="text-lg py-2 leading-8 dark:text-slate-400">
+                <h3 className="font-bold_font text-5xl py-1 text-white">Portfolio</h3>
+                <p className="text-lg py-2 leading-8 text-slate-400">
                     Below are some of my projects.
                 </p>
             </div>
 
             <div className="py-5">
                 <button
-                    className="dark:text-slate-400 py-2 px-4 border border-gray-400 rounded-xl hover:bg-emerald-700"
+                    className="text-slate-400 py-2 px-4 border border-gray-400 rounded-xl hover:bg-emerald-700"
                     onClick={() => setIsOpenWeb(!isOpenWeb)}
                 >
                     Webpages {isOpenWeb ? <i className="bi bi-chevron-compact-up"></i> : <i className="bi bi-chevron-compact-down"></i>}
@@ -51,7 +51,7 @@ export default function Portfolio() {
 
             <div className="py-5">
                 <button
-                    className="dark:text-slate-400 py-2 px-4 border border-gray-400 rounded-xl hover:bg-blue-700"
+                    className="text-slate-400 py-2 px-4 border border-gray-400 rounded-xl hover:bg-blue-700"
                     onClick={() => setIsOpenBots(!isOpenBots)}
                 >
                     Discord Bots {isOpenBots ? <i className="bi bi-chevron-compact-up"></i> : <i className="bi bi-chevron-compact-down"></i>}
@@ -78,7 +78,7 @@ export default function Portfolio() {
 
             <div className="py-5">
                 <button
-                    className="dark:text-slate-400 py-2 px-4 border border-gray-400 rounded-xl hover:bg-green-800"
+                    className="text-slate-400 py-2 px-4 border border-gray-400 rounded-xl hover:bg-green-800"
                     onClick={() => setIsOpenConfig(!isOPenConfig)}
                 >
                     Minecraft Configurations {isOPenConfig ? <i className="bi bi-chevron-compact-up"></i> : <i className="bi bi-chevron-compact-down"></i>}

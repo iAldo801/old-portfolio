@@ -4,12 +4,7 @@
 
 @layer utilities {
   .text-shadow {
-    text-shadow: 2px -3px 15px crimson;
-  }
-
-  .midnight {
-    background-color: #31435f;
-    color: white;
+    text-shadow: 2px -3px 15px deepskyblue;
   }
 
   .bg-custom {

@@ -22,7 +22,7 @@ export default function main() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className="font-poppins px-10 bg-gray-300 dark:midnight md:px-20 lg:px-40">
+      <main className="font-poppins px-10 bg-primary md:px-20 lg:px-40">
 
         <HomeAndNav />
         <Services />

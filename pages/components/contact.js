@@ -4,11 +4,11 @@ export default function Contact() {
 
     return (
 
-        <section id="contact" className="min-h-screen">
+        <section id="contact" className="py-10">
 
             <div className="relative container">
                 <div className="lg:flex gap-10">
-                    <div className="text-center shadow-2xl p-10 rounded-xl my-10 bg-slate-800 flex-1 floating-animation md:p-40">
+                    <div className="text-center shadow-2xl p-10 rounded-xl my-10 bg-slate-900 flex-1 floating-animation md:p-40 text-white">
                         <h3 className="md:text-4xl text-2xl font-bold_font pt-8 pb-2">
                             <i className="bi bi-envelope"></i> Contact Me
                         </h3>
@@ -22,7 +22,7 @@ export default function Contact() {
                                         <i className="bi bi-telegram text-2xl"> iAldo80</i>
                                     </a>
                                     <a className="hover:text-blue-800">
-                                        <i class="bi bi-discord text-2xl"> iAldo80#3946</i>
+                                        <i className="bi bi-discord text-2xl"> iAldo80#3946</i>
                                     </a>
                                 </div>
                             </div>
