@@ -7,6 +7,10 @@
     text-shadow: 2px -3px 15px deepskyblue;
   }
 
+  .user-select-none {
+    user-select: none;
+  }
+
   .bg-custom {
     background-image: url("../public/404-error.jpg");
     background-size: cover;
@@ -30,6 +34,10 @@
 
   .floating-animation {
     animation: float 3s ease-in-out infinite;
+  }
+
+  body {
+    outline: none;
   }
 
   .container {
@@ -91,16 +99,13 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
-  background-color: #334155;
+  width: 0;
+  height: 0;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: orange;
+  background-color: transparent;
   border-radius: 50px;
 
-}
-
-main {
-  background-color: #e4e5f1;
 }
