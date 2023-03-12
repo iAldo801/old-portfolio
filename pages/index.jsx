@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import Contact from "./components/contact";
 
 export default function main() {
+  
   const [activeSection, setActiveSection] = useState("home");
 
   const scrollToSection = (sectionId) => {
@@ -83,7 +84,7 @@ export default function main() {
         <Footer />
       </main>
 
-      <div className="fixed top-1/2 right-5 transform -translate-y-1/2 flex-col hidden md:flex">
+      <div className="fixed top-1/2 right-5 transform -translate-y-1/2 flex-col">
 
         <Tooltip title="Home" placement="left" open={tooltipOpenHome} onClose={handleTooltipCloseHome}>
           <button onMouseEnter={handleTooltipOpenHome} onMouseLeave={handleTooltipCloseHome} className={`${activeSection === "about" ? "bg-white" : "bg-gray-500"} rounded-full w-3 h-3 mb-3 hover:bg-white`} onClick={() => scrollToSection("about")}>
