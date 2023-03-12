@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Tooltip } from '@mui/material';
 import Head from "next/head";
 import HomeAndNav from "./components/home_nav";
 import Services from "./components/services";
@@ -16,54 +15,6 @@ export default function main() {
     section.scrollIntoView({ behavior: "smooth" });
     setActiveSection(sectionId);
   };
-
-  // Home Tooltip
-
-//   const [tooltipOpenHome, setTooltipOpenHome] = useState(false);
-
-//   const handleTooltipCloseHome = () => {
-//     setTooltipOpenHome(false);
-//   };
-
-//   const handleTooltipOpenHome = () => {
-//     setTooltipOpenHome(true);
-//   };
-
-//   // Services Tooltip
-
-//   const [tooltipOpenServices, setTooltipOpenServices] = useState(false);
-
-//   const handleTooltipCloseServices = () => {
-//     setTooltipOpenServices(false);
-//   };
-
-//   const handleTooltipOpenServices = () => {
-//     setTooltipOpenServices(true);
-//   };
-
-//   // Portfolio Tooltip
-
-//   const [tooltipOpenPortfolio, setTooltipOpenPortfolio] = useState(false);
-
-//   const handleTooltipClosePortfolio = () => {
-//     setTooltipOpenPortfolio(false);
-//   };
-
-//   const handleTooltipOpenPortfolio = () => {
-//     setTooltipOpenPortfolio(true);
-//   };
-
-//   // Contact Tooltip
-
-//   const [tooltipOpenContact, setTooltipOpenContact] = useState(false);
-
-//   const handleTooltipCloseContact = () => {
-//     setTooltipOpenContact(false);
-//   };
-
-//   const handleTooltipOpenContact = () => {
-//     setTooltipOpenContact(true);
-//   };
 
   return (
     <div>
@@ -83,30 +34,6 @@ export default function main() {
         <Contact />
         <Footer />
       </main>
-
-//       <div className="fixed top-1/2 right-5 transform -translate-y-1/2 flex-col">
-
-//         <Tooltip title="Home" placement="left" open={tooltipOpenHome} onClose={handleTooltipCloseHome}>
-//           <button onMouseEnter={handleTooltipOpenHome} onMouseLeave={handleTooltipCloseHome} className={`${activeSection === "about" ? "bg-white" : "bg-gray-500"} rounded-full w-3 h-3 mb-3 hover:bg-white`} onClick={() => scrollToSection("about")}>
-//           </button>
-//         </Tooltip>
-
-//         <Tooltip title="Services" placement="left" open={tooltipOpenServices} onClose={handleTooltipCloseServices}>
-//           <button onMouseEnter={handleTooltipOpenServices} onMouseLeave={handleTooltipCloseServices} className={`${activeSection === "services" ? "bg-white" : "bg-gray-500"} rounded-full w-3 h-3 mb-3 hover:bg-white`} onClick={() => scrollToSection("services")}>
-//           </button>
-//         </Tooltip>
-
-//         <Tooltip title="Portfolio" placement="left" open={tooltipOpenPortfolio} onClose={handleTooltipClosePortfolio}>
-//           <button onMouseEnter={handleTooltipOpenPortfolio} onMouseLeave={handleTooltipClosePortfolio} className={`${activeSection === "portfolio" ? "bg-white" : "bg-gray-500"} rounded-full w-3 h-3 mb-3 hover:bg-white`} onClick={() => scrollToSection("portfolio")}>
-//           </button>
-//         </Tooltip>
-
-//         <Tooltip title="How to reach me" placement="left" open={tooltipOpenContact} onClose={handleTooltipCloseContact}>
-//           <button onMouseEnter={handleTooltipOpenContact} onMouseLeave={handleTooltipCloseContact} className={`${activeSection === "contact" ? "bg-white" : "bg-gray-500"} rounded-full w-3 h-3 mb-3 hover:bg-white`} onClick={() => scrollToSection("contact")}>
-//           </button>
-//         </Tooltip>
-
-//       </div>
     </div>
   );
 }
