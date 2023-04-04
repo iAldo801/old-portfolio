@@ -94,7 +94,7 @@ button {
 
 ::selection {
   background: #fcfcfc;
-  background: rgba(255, 255, 255, .2);
+  background: #ffffff33;
   text-shadow: none;
 }
 

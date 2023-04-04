@@ -1,5 +1,6 @@
 import React from "react";
 import { BsArrowDownCircle } from "react-icons/bs";
+import { AiOutlineInfoCircle } from "react-icons/ai"
 
 export default function Services() {
 
@@ -34,26 +35,24 @@ export default function Services() {
             </p>
           </div>
           <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-900 flex-1 floating-animation">
-            <h3><i className={"bi bi-x-lg text-red-700 text-2xl"}></i></h3>
+            <h3><i className={"bi bi-exclamation-triangle-fill text-yellow-400 text-2xl"}></i></h3>
             <h3 className="text-lg font-medium pt-8 pb-2 ">
               <i className="bi bi-discord"></i> Discord Bot Developer
             </h3>
             <p className="py-2">
               I have been making discord bots for
-              about three months which is not much but
+              about 5 months or so which is not much but
               I'm still learning when I have the time
               and I'm also enhancing my skills each time.
             </p>
           </div>
           <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-900 flex-1 floating-animation">
-            <h3><i className={"bi bi-exclamation-triangle-fill text-yellow-400 text-2xl"}></i></h3>
-            <h3 className="text-lg font-medium pt-8 pb-2 "><i className="bi bi-gear"></i> Minecraft Configurations</h3>
+            <h3><i className={"bi bi-info-circle text-blue-800 text-2xl"}></i></h3>
+            <h3 className="text-lg font-medium pt-8 pb-2 "><i className="bi bi-list-ol"></i> Other Services</h3>
             <p className="py-2">
-              I have configuraterd a few minecraft
-              servers and been doings for about 3
-              years or so. I have lots of experience
-              with multiple plugins and can help you
-              out with your server with no problem :D.
+              The service you are looking for is not listed above?
+              You should still reach to me! I might be able to help you.
+              If not than I can still refer/vouch for you to someone who can :D.
             </p>
           </div>
         </div>

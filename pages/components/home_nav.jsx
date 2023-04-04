@@ -1,12 +1,19 @@
-import { useState } from "react";
-import { AiFillGithub, AiOutlineInstagram, AiFillTwitterCircle, AiOutlineHome } from "react-icons/ai";
+import { useState } from 'react';
+import { Tooltip } from '@mui/material';
+import { AiFillGithub, AiOutlineInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import { BsArrowDownCircle, BsPerson, BsDiagram2, BsBriefcase } from "react-icons/bs";
-import { Button, Tooltip } from '@mui/material';
-
 
 export default function Home() {
 
+    const [tooltipOpenGithub, setTooltipOpenGithub] = useState(false);
 
+    const handleTooltipCloseGithub = () => {
+      setTooltipOpenGithub(false);
+    };
+
+    const handleTooltipOpenGithub = () => {
+        setTooltipOpenGithub(true);
+      };
 
     return (
 
@@ -20,9 +27,11 @@ export default function Home() {
                     <h1 className="font-poppins text-xl">iAldo80</h1>
                     <ul className="flex items-center">
                         <li className="text-2xl pr-5 flex justify-center gap-5 text-gray-400">
-                            <a className="hover:text-slate-500" target={"_blank"} href="https://github.com/iAldo85">
+                            <Tooltip title="Github" placement="bottom" open={tooltipOpenGithub} onClose={handleTooltipCloseGithub}>
+                            <a onMouseEnter={handleTooltipOpenGithub} onMouseLeave={handleTooltipCloseGithub} className="hover:text-slate-500" target={"_blank"} href="https://github.com/iAldo85">
                                 <AiFillGithub />
                             </a>
+                            </Tooltip>
                             <a className="hover:text-slate-500" target={"_blank"} href="https://www.instagram.com/ialdo85/">
                                 <AiOutlineInstagram />
                             </a>
@@ -30,13 +39,7 @@ export default function Home() {
                                 <AiFillTwitterCircle />
                             </a>
                         </li>
-                        <li>
-                            <button onClick={handleClickContact} className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-lg hidden md:flex">
-                                <p>
-                                    Contact me
-                                </p>
-                            </button>
-                        </li>
+
                     </ul>
                 </nav>
 
@@ -108,10 +111,4 @@ export default function Home() {
         window.scrollTo({ top: yCoord, behavior: "smooth" });
     }
 
-    function handleClickContact(event) {
-        event.preventDefault();
-        const servicesSection = document.getElementById("contact");
-        const yCoord = servicesSection.getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({ top: yCoord, behavior: "smooth" });
-    }
 }

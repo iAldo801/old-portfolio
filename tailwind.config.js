@@ -14,7 +14,6 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         bold_font: ["bold font"],
       },
-
     },
   },
   plugins: [],
