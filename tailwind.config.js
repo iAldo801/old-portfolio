@@ -6,13 +6,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#00040f",
+        primary: "#081B29",
         midnight: "#31435f",
-
+        orangec: "#EA7724",
+        "blackc": "#081b29"
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        bold_font: ["bold font"],
+        poppins: ["Poppins Regular"],
+        poppinsMedium: ["Poppins Medium"],
+        poppinsSemiBold: ["Poppins SemiBold"],
+        poppinsBold: ["Poppins Bold"],
       },
     },
   },

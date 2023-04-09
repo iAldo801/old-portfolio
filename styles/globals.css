@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text-shadow {
-    text-shadow: 2px -3px 15px deepskyblue;
-  }
-
   .user-select-none {
     user-select: none;
   }
@@ -16,6 +12,43 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .talkanim {
+    background: linear-gradient(to right, #EA7724 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+
+  .talkanim:hover {
+    background-position: left bottom;
+  }
+
+  .hireanim {
+    background: linear-gradient(to right, transparent 50%, #EA7724 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+
+  .hireanim:hover {
+    background-position: left bottom;
+    color: #EA7724;
+  }
+
+  @keyframes gradientanim {
+    50% {
+      background-color: #EA7724;
+    }
+
+    100% {
+      background-color: #F7B500;
+    }
+
+    0% {
+      background-color: #F7B500;
+    }
   }
 
   @keyframes float {
@@ -32,6 +65,13 @@
     }
   }
 
+  .gradient-animation {
+    animation: gradientanim 3s ease-in-out infinite;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
   .floating-animation {
     animation: float 3s ease-in-out infinite;
   }
@@ -46,14 +86,49 @@
   }
 
   .animate-bounce {
-    animation: bounce 3s infinite;
+    animation: bounce 5s backwards;
   }
 
+  .border-animation {
+    border: none;
+    box-shadow: 0 0 0 0 rgba(255, 180, 41, 0.5);
+    animation: border-pulse 1.5s infinite;
+  }
+
+  @keyframes border-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(238, 200, 34, 0.747);
+    }
+
+    50% {
+      box-shadow: 0 0 0 10px rgba(255, 230, 0, 0);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(225, 156, 66, 0);
+    }
+  }
+}
+
+
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("../public/poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
-  font-family: "bold font";
-  src: url("../public/boldfont.ttf");
+  font-family: "Poppins Medium";
+  src: url("../public/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("../public/poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../public/poppins/Poppins-Bold.ttf");
 }
 
 html,
@@ -84,7 +159,36 @@ button {
   box-sizing: border-box;
 }
 
+input:focus,
+input:active,
+input:hover {
+  border-color: #EA7724 !important;
+  border-bottom: 3px solid #EA7724;
+}
 
+input:hover {
+  border-color: #929191 !important;
+}
+
+input {
+  margin: 5px 0;
+  outline: none;
+}
+
+textarea:focus,
+textarea:active,
+textarea:hover {
+  border-color: #EA7724 !important;
+  border-bottom: 3px solid #EA7724;
+}
+
+textarea:hover {
+  border-color: #929191 !important;
+}
+
+textarea {
+  outline: none;
+}
 
 ::-moz-selection {
   background: #fcfcfc;
@@ -107,5 +211,4 @@ button {
 ::-webkit-scrollbar-thumb {
   background-color: transparent;
   border-radius: 50px;
-
 }
