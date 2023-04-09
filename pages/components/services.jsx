@@ -8,8 +8,8 @@ export default function Services() {
 
     <section id="services" className="min-h-screen">
       <div>
-        <h3 className="font-bold_font text-5xl py-1 text-white">My Services</h3>
-        <p className="text-lg py-2 leading-8 text-slate-400">
+        <h3 className="font-poppinsBold text-5xl leading-tight text-white">Why you shold hire me?</h3>
+        <p className="font-poppinsMedium text-lg py-2 leading-8 text-slate-400">
           Below are the services I currently offer.
           <br></br>
           <i className={"bi bi-check-lg text-green-700 text-lg"}></i> Accepting commissions
@@ -20,18 +20,18 @@ export default function Services() {
         </p>
       </div>
       <div className="relative container">
-        <div className="lg:flex gap-10 text-white">
+        <div className="font-poppins lg:flex gap-10 text-white">
           <div className="text-center shadow-2xl p-10 rounded-xl my-10 bg-slate-900 flex-1 floating-animation">
             <h3>
               <i className={"bi bi-check-lg text-green-700 text-2xl"}></i>
             </h3>
-            <h3 className="text-lg font-medium pt-8 pb-2">
+            <h3 className="text-lg pt-8 pb-2">
               <i className="bi bi-globe"></i> Frontend Web Developer
             </h3>
             <p className="py-2">
-              The technologies I use are as follow.
-              Next.js (Basic knowledge), TailwindCSS, Bootstrap,
-              HTML, CSS, and JavaScript.
+              The technologies I use/know are as follow.
+              NextJS, TailwindCSS, Bootstrap,
+              HTML, CSS, and JS.
             </p>
           </div>
           <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-900 flex-1 floating-animation">
@@ -43,7 +43,8 @@ export default function Services() {
               I have been making discord bots for
               about 5 months or so which is not much but
               I'm still learning when I have the time
-              and I'm also enhancing my skills each time.
+              and I'm also enhancing my skills developing
+              discord bots when possible.
             </p>
           </div>
           <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-900 flex-1 floating-animation">
@@ -60,7 +61,7 @@ export default function Services() {
 
       <div className="flex justify-center flex-col items-center">
         <div className="text-center mb-4">
-          <h3 className="text-lg text-slate-400">
+          <h3 className="font-poppins text-lg text-slate-400">
             Interested in any of my services?<br></br>
             Check out my portofolio by clicking
             this button!
@@ -72,8 +73,11 @@ export default function Services() {
           </button>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </section>
-
   )
 
   function handleClick(event) {
@@ -82,5 +86,4 @@ export default function Services() {
     const yCoord = servicesSection.getBoundingClientRect().top + window.pageYOffset;
     window.scrollTo({ top: yCoord, behavior: "smooth" });
   }
-
 }
