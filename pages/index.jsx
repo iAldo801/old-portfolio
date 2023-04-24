@@ -5,7 +5,6 @@ import HomeAndNav from "./components/home_nav";
 import Services from "./components/services";
 import Portfolio from "./components/portfolio";
 import Footer from "./components/footer";
-import Contact from "./components/contact";
 
 export default function main() {
   
@@ -80,7 +79,6 @@ export default function main() {
         <HomeAndNav />
         <Services />
         <Portfolio />
-        <Contact />
         <Footer />
       </main>
 
