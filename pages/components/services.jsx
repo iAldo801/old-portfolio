@@ -8,7 +8,7 @@ export default function Services() {
 
     <section id="services" className="min-h-screen">
       <div>
-        <h3 className="font-poppinsBold text-5xl leading-tight text-white">Why you shold hire me?</h3>
+        <h3 className="font-poppinsBold text-5xl leading-tight text-white">Why you should hire me?</h3>
         <p className="font-poppinsMedium text-lg py-2 leading-8 text-slate-400">
           Below are the services I currently offer.
           <br></br>
