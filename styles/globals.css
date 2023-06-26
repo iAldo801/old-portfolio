@@ -7,13 +7,6 @@
     user-select: none;
   }
 
-  .bg-custom {
-    background-image: url("../public/404-error.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   .talkanim {
     background: linear-gradient(to right, #EA7724 50%, transparent 50%);
     background-size: 200% 100%;
@@ -50,6 +43,13 @@
       background-color: #F7B500;
     }
   }
+  
+  .gradient-animation {
+    animation: gradientanim 3s ease-in-out infinite;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 
   @keyframes float {
     0% {
@@ -65,19 +65,9 @@
     }
   }
 
-  .gradient-animation {
-    animation: gradientanim 3s ease-in-out infinite;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
 
   .floating-animation {
     animation: float 3s ease-in-out infinite;
-  }
-
-  body {
-    outline: none;
   }
 
   .container {
@@ -108,6 +98,7 @@
       box-shadow: 0 0 0 0 rgba(225, 156, 66, 0);
     }
   }
+
 }
 
 
@@ -131,10 +122,41 @@
   src: url("../public/poppins/Poppins-Bold.ttf");
 }
 
+@font-face {
+  font-family: "Inter Regular";
+  src: url("../public/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter Medium";
+  src: url("../public/Inter/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Inter SemiBold";
+  src: url("../public/Inter/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../public/Inter/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Inter ExtraBold";
+  src: url("../public/Inter/Inter-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Inter Black";
+  src: url("../public/Inter/Inter-Black.ttf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  outline: none;
 }
 
 a {

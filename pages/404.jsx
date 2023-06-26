@@ -11,15 +11,22 @@ export default function Custom404() {
                 <title>404 - Page Not Found</title>
             </Head>
 
-            <main className="bg-custom">
-                <section>
-                    <div className="h-screen">
-                        <div className="flex flex-col justify-center items-center h-full text-slate-400">
-                            <a href="http://localhost:3000/">
-                            <button className="rounded-lg border border-gray-500 py-2 px-4 hover:bg-slate-800 hover:text-white">
-                                Go back to the homepage
-                            </button>
-                            </a>
+            <main className="font-poppinsSemiBold">
+                <section className="page_404">
+                    <div className="row">
+                        <div className="col-sm-12 ">
+                            <div className="col-sm-10 col-sm-offset-1  text-center">
+                                <div className="four_zero_four_bg">
+                                    <h1 className="text-center ">404</h1>
+                                </div>
+                                <div className="contant_box_404">
+                                    <h3 className="h2">
+                                        Looks like you're lost
+                                    </h3>
+                                    <p>the page you are looking for is not avaible or pearhaps it may not exist!</p>
+                                    <a href="https://ialdo80.me">Go to Home</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

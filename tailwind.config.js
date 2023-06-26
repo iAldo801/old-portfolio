@@ -12,10 +12,26 @@ module.exports = {
         "blackc": "#081b29"
       },
       fontFamily: {
+
+        // ############################
+        // ######  Poppins Font  ######
+        // ############################
+
         poppins: ["Poppins Regular"],
         poppinsMedium: ["Poppins Medium"],
         poppinsSemiBold: ["Poppins SemiBold"],
         poppinsBold: ["Poppins Bold"],
+
+        // ##########################
+        // ######  Inter Font  ######
+        // ##########################
+
+        inter: ["Inter Regular"],
+        interMedium: ["Inter Medium"],
+        interSemiBold: ["Inter SemiBold"],
+        interBold: ["Inter Bold"],
+        interExtraBold: ["Inter ExtraBold"],
+        interBlack: ["Inter Black"],
       },
     },
   },

@@ -7,7 +7,7 @@ import Portfolio from "./components/portfolio";
 import Footer from "./components/footer";
 
 export default function main() {
-  
+
   const [activeSection, setActiveSection] = useState("home");
 
   const scrollToSection = (sectionId) => {
@@ -52,17 +52,6 @@ export default function main() {
     setTooltipOpenPortfolio(true);
   };
 
-  // Contact Tooltip
-
-  const [tooltipOpenContact, setTooltipOpenContact] = useState(false);
-
-  const handleTooltipCloseContact = () => {
-    setTooltipOpenContact(false);
-  };
-
-  const handleTooltipOpenContact = () => {
-    setTooltipOpenContact(true);
-  };
 
   return (
     <div>
@@ -96,11 +85,6 @@ export default function main() {
 
         <Tooltip title="Portfolio" placement="left" open={tooltipOpenPortfolio} onClose={handleTooltipClosePortfolio}>
           <button onMouseEnter={handleTooltipOpenPortfolio} onMouseLeave={handleTooltipClosePortfolio} className={`${activeSection === "portfolio" ? "bg-white" : "bg-gray-500"} rounded-full w-3 h-3 mb-3 hover:bg-white`} onClick={() => scrollToSection("portfolio")}>
-          </button>
-        </Tooltip>
-
-        <Tooltip title="How to reach me" placement="left" open={tooltipOpenContact} onClose={handleTooltipCloseContact}>
-          <button onMouseEnter={handleTooltipOpenContact} onMouseLeave={handleTooltipCloseContact} className={`${activeSection === "contact" ? "bg-white" : "bg-gray-500"} rounded-full w-3 h-3 mb-3 hover:bg-white`} onClick={() => scrollToSection("contact")}>
           </button>
         </Tooltip>
 
